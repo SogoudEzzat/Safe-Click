@@ -1,0 +1,328 @@
+:root {
+  --primary-blue: #002b49;
+  --accent-green: #28a745;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  direction: rtl;
+}
+
+/* --- الهيدر --- */
+.main-header {
+  background-color: var(--primary-blue);
+  padding: 15px 5%;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-header-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.agency-name {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.top-left-logo img {
+  height: 50px;
+  
+}
+
+/* زر الجوال */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+.menu-toggle .bar {
+  width: 25px;
+  height: 17px;
+  background: white;
+}
+
+/* --- باقي التنسيقات --- */
+.hero {
+  height: 70vh;
+background-image: url("./home/hom.jpeg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.about-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.about-image {
+  flex: 1;
+ 
+  border-radius: 15px;
+  padding: 30px;
+}
+.about-image img {
+  width: 100%;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* ظل للصورة لتظهر فوق الأخضر */
+    border-radius: 10px;
+}
+.about-content {
+  flex: 1;
+}
+
+.btn-green {
+  background: var(--accent-green);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.section-title {
+  border-right: 5px solid var(--accent-green);
+  padding-right: 15px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.tag {
+  background: #e9f5ed;
+  color: var(--accent-green);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+.btn-more {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.programs-section {
+    padding: 60px 0; /* مساحة حول القسم */
+}
+
+.program-box {
+  
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 0; 
+    min-height: 250px;
+    gap:30px;
+    position: relative;
+}
+
+.prog-info {
+    flex: 1;
+    color: rgb(26, 26, 26); /* النص داخل الأخضر يكون أبيض */
+    padding-right: 20px;
+    text-align: right;
+}
+
+.prog-info h3, .prog-info p, .prog-info ul {
+    margin-bottom: 15px;
+}
+
+.prog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.prog-list li::before {
+    content: "• ";
+    color: rgb(20, 20, 20);
+}
+
+/* زر تعرف على المزيد داخل الصندوق الأخضر */
+.prog-info .all-link {
+    background: transparent;
+    text-decoration: none;
+    border: none;
+      background: var(--accent-green);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+    font-weight: bold;
+    
+
+    
+   
+}
+
+.programs-section img{
+   height:300px;
+   
+     box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* ظل للصورة لتظهر فوق الأخضر */
+    border-radius: 10px;
+}
+
+.main-footer {
+  background: var(--primary-blue);
+  color: white;
+  padding: 40px 5%;
+  margin-top: 50px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+li a:hover {
+    color: var(--accent-green);
+}
+.footer-col a{
+  color: white;
+    text-decoration: none;
+}
+/* .floating-icon {
+            position:absolute;
+            bottom:50px; 
+           left: 4px;
+            width: 90px;
+             height: 90px; 
+            animation: pulse 2s infinite;
+            z-index: 1000;
+        }
+        #about {
+            width: 100%;
+             height: 100%; 
+            border-radius: 50%;
+            border: 3px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            object-fit: cover;
+        } */
+/* --- متجاوب مع الجوال --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  /* .floating-icon {
+            position:absolute;
+            bottom:70px; 
+           left:2px;
+            width: 50px;
+             height: 50px; 
+            animation: pulse 2s infinite;
+            z-index: 1000;
+} */
+   
+  .nav-list {
+    position: absolute;
+    top: 12%;
+    right: -100%;
+    width: 100%;
+    background: var(--primary-blue);
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 999;
+
+  }
+  .nav-list.active {
+    right: 0;
+    
+  }
+  .about-section,
+  .services-grid,
+  .footer-container {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .agency-name {
+    border-left: none;
+  }
+  .program-box img{
+    width: 80vw;
+    height: auto;
+  }
+  .program-box {
+  
+
+  flex-direction: column;
+    grid-template-columns: 1fr;
+    
+  }
+  
+  .hero {
+  height: 30vh;
+   background-size: cover;
+  
+
+}
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+}
+}
+li a{
+    color: white;
+    text-decoration: none;
+}

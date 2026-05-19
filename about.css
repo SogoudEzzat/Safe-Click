@@ -1,0 +1,436 @@
+:root {
+  --primary-blue: #002b5c; /* الأزرق الداكن من الصورة */
+  --accent-green: #28a745; /* الأخضر الرسمي */
+  --text-gray: #4a5568;
+  --bg-light: #ffffff;
+  --bg-alt: #f8fafc; /* لون خلفية تبادلي بسيط */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- الهيدر --- */
+.main-header {
+  background-color: var(--primary-blue);
+  padding: 15px 5%;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-header-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.agency-name {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-list a:hover {
+  color: var(--accent-green);
+}
+
+.top-left-logo img {
+  height: 50px;
+}
+
+/* زر الجوال */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--primary-blue);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--primary-blue), #1a4a82);
+  color: white;
+  margin-bottom: 40px;
+  border-radius: 0 0 50px 50px;
+}
+.supervisor img{
+ width: 100%;
+    max-width: 500px;
+    height: auto;
+   border-radius: 30px;
+   padding: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #0d1b2a;
+  --secondary-color: #1b263b;
+  --accent-color: #415a77;
+  --text-light: #e0e1dd;
+  --highlight: #00b4d8;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: var(--primary-color);
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* العناوين */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--highlight);
+  margin: 10px auto;
+}
+
+/* قسم من نحن */
+.about-section {
+  background: white;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.mission-box {
+  background: var(--primary-blue);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+/* فريق العمل */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.team-grid span {
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.team-grid span:hover {
+  background: var(--highlight);
+  color: white;
+}
+
+.supervisor {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  padding: 20px;
+  border-top: 2px solid #eee;
+}
+/* تنسيق حاوية الأيقونات */
+.contact-info-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* التنسيق الدائري للأيقونة */
+.social-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1); /* خلفية شفافة خفيفة */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.contact-info-icons img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+   
+}
+.contact-info-icons{
+    gap: 30px;
+}
+
+/* تأثيرات الـ Hover (عند تمرير الماوس) */
+.social-icon:hover {
+    transform: translateY(-8px) scale(1.1);
+    background: white; /* تتحول الخلفية للأبيض عند الوقوف عليها */
+}
+
+/* ألوان الأيقونات عند الوقوف عليها */
+.fb:hover { color: #1877f2; border-color: #1877f2; }
+.x-twitter:hover { color: #000; border-color: #000; }
+.in:hover { color: #0a66c2; border-color: #0a66c2; }
+.wa:hover { color: #25d366; border-color: #25d366; }
+
+/* تعديل عرض قسم التواصل ليناسب الشكل الجديد */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* جعل القسمين متساويين */
+    gap: 80px;
+    align-items: center;
+}
+
+/* للموبايل: وضع الأيقونات فوق الفورم */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .contact-info-icons {
+        margin-bottom: 30px;
+    }
+}
+
+/* قسم التواصل */
+.contact-section {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.contact-section .section-title {
+  color: white;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.social-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.social-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.fb:hover {
+  color: #1877f2;
+}
+.tw:hover {
+  color: #1da1f2;
+}
+.in:hover {
+  color: #0a66c2;
+}
+.wa:hover {
+  color: #25d366;
+}
+
+/* فورم التواصل */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #1b263b;
+  color: white;
+  font-family: 'Cairo';
+}
+
+.contact-form button {
+  padding: 15px;
+  background: var(--highlight);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-col a{
+  color: white;
+    text-decoration: none;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+
+/* تنسيق للموبايل */
+@media (max-width: 850px) {
+  .info-row,
+  .info-row:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .text-content h2::before {
+    right: 50%;
+    transform: translateX(50%);
+    top: -10px;
+    height: 5px;
+    width: 50px;
+  }
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-footer {
+  background: var(--primary-blue);
+  color: white;
+  padding: 40px 5%;
+  margin-top: 50px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  color: var(--accent-green);
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .menu-toggle {
+  gap: 5px;
+}
+  .nav-list {
+    position: absolute;
+    top: 12%;
+    right: -100%;
+    width: 100%;
+    background: var(--primary-blue);
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.3s;
+    z-index:999;
+  }
+  .nav-list.active {
+    right: 0;
+  }
+  .about-section,
+  .services-grid,
+  .footer-container {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .agency-name {
+    border-left: none;
+  }
+
+}
