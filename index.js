@@ -37,7 +37,7 @@ loginForm.addEventListener('submit', async (e) => {
 
             // 2. التوجيه إلى صفحة profile.html بعد ثانية واحدة
             setTimeout(() => {
-                window.location.href = 'profile.html';
+                window.location.href = './profile.html';
             }, 1000);
             
         } else {
